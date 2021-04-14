@@ -1,0 +1,35 @@
+Existem alguns materiais, chamados de Cards ou cheat-sheets pela comunidade, que são 
+extremamente úteis. Os cheat-sheets são folhas que contêm comandos e códigos de exemplos, que 
+ilustram o uso dos diversos softwares e pacotes dentro do R. As cheat-sheets que sugiro que você 
+imprima e deixe ao seu lado na análise são:
+1. Funções básicas do R: 
+http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
+2. Visualização de dados: 
+https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
+3. Transformação nos dados: 
+https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
+4. data.table (pacote para grandes bases de dados): 
+https://github.com/rstudio/cheatsheets/raw/master/datatable.pdf
+5. Datas e horas no R: 
+https://github.com/rstudio/cheatsheets/raw/master/lubridate.pdf6. Carregando dados no R: 
+https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf
+7. R Markdown: 
+https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
+8. Comandos do RStudio:
+https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
+9. Trabalhando com textos:
+https://github.com/rstudio/cheatsheets/raw/master/strings.pdf
+E mais uma dezena de outras cheat sheets, que vão servir para cada uma das ocasiões de 
+análise que você precisar. Todas estão disponíveis de graça no site do R Studio.
+ 
+Projetos, R Markdown e Scripts
+Como o R é uma linguagem chamada de script language, ele tem um interpretador, que é o 
+Console que você baixou os pacotes há pouco. Os comandos passados ao interpretador não são 
+salvos em lugar algum, exceto no histórico do R (ver a barra history no canto superior direito de 
+seu RStudio). Quando trabalhamos com R, por questão de compartimentalização, organizamos os 
+resultados em arquivos que contêm os comandos. Existem, ao menos, três tipos de arquivos, que 
+discutimos a seguir:
+ 
+Scripts
+Scripts são as formas mais elementares de armazenar os códigos de R. São arquivos com a 
+extensão .R, que contêm códigos interpretáveis pelo R, intercalados com comentários. 
