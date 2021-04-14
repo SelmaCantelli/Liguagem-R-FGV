@@ -1,0 +1,36 @@
+Pacotes: turbinando o R
+Para turbinar o seu R, você pode instalar pacotes, que são nada mais do que códigos criados 
+por outros usuários, com objetivo de resolver um problema prático. Em geral, as pessoas escrevem 
+pacotes para resolver problemas práticos que elas têm ou para fazer propaganda delas mesmas. É 
+muito comum, na área de Ciência Política, que os professores criem pacotes para fazerem 
+propaganda dos seus trabalhos.19
+Vamos olhar um pouco os repositórios, abrindo a seguinte URL 
+https://cran.fiocruz.br/web/packages/index.html.
+Na esquerda, temos o nome do pacote e, na direita, a descrição do pacote. Vou dar uma 
+busca para algum pacote relacionado ao Brasil. Basta usar CMD + F (CTRL + F) e digitar Brazil. 
+Vou baixar esse pacote chamado brazilmaps, que parece ser interessante: contém todos os mapas 
+do Brasil disponíveis no site do IBGE. Para baixar um pacote:
+> install.packages('brazilmaps', dependencies = T)
+Faça isso e software vai instalar esse pacote. O outro comando, dependencies=T, é para 
+que o R instale outros pacotes que também são necessários para rodar o R. Para descobrir o que 
+tem no pacote, digite help(package='brazilmaps'). No lado direito inferior, onde temos a 
+tela de help, vão aparecer todos os atributos do pacote.
+Para usar o pacote, basta digitar library(brazilmaps). Por exemplo, para a função 
+plot_brmap, podemos pedir um exemplo de uso:
+example(plot_brmap)
+Dessa forma, você vai passando de mapa em mapa.
+ 
+Instalação dos pacotes necessário no curso
+Vamos instalar alguns pacotes necessários ao nosso trabalho: os pacotes são o Zelig, o pscl, 
+que são mais de ciência política. O AER e o car, que são mais para análise de regressão. O 
+tidyverse, o haven e o data.table, que são mais para processamento de dados, entre outros. 
+Como exercício, olhe a descrição dos pacotes que estamos instalando no CRAN. A seguir, veja o 
+código para fazer a instalação:
+install.packages(c('Zelig', 'pscl', 'AER', 'car', 
+ 'tidyverse', 'nycflights13', 
+ 'gapminder', 'Lahman', 'haven',
+ 'RColorBrewer', 'xlsx', 'devtools',
+ 'data.table', 'httr', 'wordcloud',
+ 'lubridate', 'xtable', 'stargazer',
+ 'countrycode', 'tm'), dependencies = T)
+Esse código vai demorar um pouco para rodar, a depender da velocidade da sua internet.
