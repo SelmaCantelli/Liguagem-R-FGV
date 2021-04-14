@@ -1,0 +1,74 @@
+Para instalar o R, entre no site R Project (https://www.r-project.org/). 
+Do lado esquerdo, existe um menu, contendo a aba CRAN, que são os repositórios nos 
+quais o R é armazenado pelo mundo à fora. 
+Clique no link da Fiocruz (ou qualquer outro da sua preferência) e escolha o seu sistema 
+operacional. Nesse caso, vamos escolher Windows e baixar os pacotes.
+Após baixar, você vai precisar abrir o instalador. Siga a sequência de telas até o final, e o 
+programa será instalado. Minha sugestão, ao menos para essa versão, é aceitar as configurações “de 
+fábrica”. Após finalizar, o seu computador já possui o R instalado.
+ 
+Instalação dos programas necessários: RStudio
+Se você tentar abrir o R, vai ver algo interessante e assustador: ao abrir o software, aparece o 
+console, local onde você coloca os comandos, e só. Esse é, basicamente, o 𝑅𝑅: como linguagem 
+interpretada, o console é o interpretador da linguagem. Nele, você digita os comandos e, então, o 
+software executa esses comandos. Isso acaba sendo um pouco desorganizado e ineficiente, de 
+forma que, para facilitar, usamos um chamado front-end.
+A finalidade do front-end é organizar os resultados e o processamento do 𝑅𝑅 em espaços 
+diferentes. Dos diversos tipos de front-ends para R, o mais usado na área é o RStudio. O RStudio 
+é um software livre criado por Joseph Alarie (o mesmo criador do App LoseIt), em 2009. Existem 
+duas versões do RStudio, uma é feita para rodar pela internet, com o auxílio de um servidor. A 
+outra, a que vamos baixar, é a versão Desktop, que não tem custos para usarmos.
+No seu navegador, abra a seguinte URL: https://www.rstudio.com/products/rstudio/
+download/.
+Clique em Download na coluna R Studio Desktop. Em seguida, você deve selecionar, na 
+lista, o instalador que mais se adequa ao seu caso. No caso do computador que estou usando 
+agora, um Mac, vou selecionar o instalador para o Mac de 64 bits. 
+A sua será um pouco diferente, pois a minha está com o esquema de cores que uso. No 
+entanto, se apareceu essa tela com a versão do R que você instalou (que é, certamente, mais nova 
+do que a que estou usando), sucesso!
+ 
+Instalação do Git: um acordo entre você e você mesmo
+Com o que instalou, você já consegue usar o R. No entanto, existem ferramentas que 
+ajudam a otimizar o processo de análise de dados. Uma delas é o Git.
+Git é uma ferramenta de controle de versão cujo objetivo é fazer com que as várias edições 
+dos códigos fiquem salvas. Nesse sentido, é como se fosse um processo de cristalizar a sua 
+memória de edição do texto: um compromisso entre você hoje e você no futuro.
+Você pode perguntar: porque isso é importante, se a versão final do meu código é a que vou 
+usar? Três motivos fazem com que o Git seja uma ferramenta útil para seu trabalho:
+1. Quando você está escrevendo códigos de computador, é comum que você imagine 
+uma melhoria, que acaba sendo uma piora… Você pode melhorar o código e, 
+então, na hora de rodar os resultados, aparecem coisas que não fazem sentido ou 
+não estão batendo com o básico do que você esperava. Nesse tipo de situação, é 
+conveniente usar uma ferramenta que ajude a comparar as alterações e que faça com 
+que você tenha versões do código que possam ser restauradas caso a alteração seja, 
+definitivamente, uma piora.
+Se você precisa explicar por que fez uma coisa, é fácil quando o projeto tem poucos 
+passos. No entanto, é complexo para projetos grandes. Usar o Git faz com que você 
+seja capaz de explicar tudo o que foi feito em cada etapa e qual a evolução de um 
+passo a outro.
+3. Se você precisa enviar o código para alguém replicar, basta deixar a pessoa fork o 
+conteúdo: uma forma de transferir, via git, o que você fez.
+
+Siga todos os passos de instalação e, ao final, para verificar se está funcionando, vá no 
+Terminal (ou Prompt de Comando no Windows) e digite git --version.
+
+Se ele retornar a versão (que, provavelmente, será mais atual do que a minha), é sinal que o Git 
+foi instalado corretamente. Para configurar o seu nome e o seu e-mail no Git, use os seguintes códigos:
+$ git config --global user.name "Seu Nome Aqui"
+$ git config --global user.email "seu.email.aqui@seuemail.com"
+Substitua o nome entre aspas e o e-mail no código acima. Isso deve ser usado no Terminal 
+(Prompt de Comando). Se você não sabe como abrir o Terminal, basta no R Studio ir em 
+Tools -> Shell… E o software abrirá o terminal.
+
+
+Instalação do GitHub
+
+A versão do Git on-line é o que chamamos de Github. É um repositório on-line em que 
+você pode guardar códigos e exercícios que resolver nesse curso. Além disso, é uma forma de você 
+compartilhar com outras pessoas os códigos que escrever. Para criar uma conta no Github, abra o 
+seguinte link https://github.com. Faça a conta gratuita mesmo, pois ela é suficiente para o que 
+você precisa.
+A conta paga tem algumas vantagens, como a possibilidade de criar repositórios privados 
+para os seus dados, de forma que ninguém tenha acesso. Um modo de fazer uma conta on-line é 
+pedindo ao Github uma conta acadêmica e explicando por que você precisa da conta. Dessa 
+forma, eu tenho uma conta privada sem pagar nada.
