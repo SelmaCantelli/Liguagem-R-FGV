@@ -1,0 +1,33 @@
+Configuração do R Studio.
+
+Você verá algo equivalente à tela apresentada, no esquema de cores que o seu computador 
+tiver configurado (como trabalho muitas horas seguidas, prefiro esse esquema de cores). Se essa 
+tela apareceu, significa que está tudo ok.16
+Vamos entender um pouco da organização que o R Studio faz no compilador do R: 
+primeiro, note no lado esquerdo.
+ 
+Configuração do Git e Github para funcionar com o seu R Studio
+O primeiro passo é criar uma chave SSH RSA, que tem o objetivo de facilitar a 
+comunicação segura para os seus dados entre quem tem a chave pública (e pode usa-la codificar 
+informações) e você, que tem a chave privada (e pode decodificar a informação enviada).
+Para criar uma chave, primeiro vamos ver se existe alguma chave já configurada. Vá no 
+console do R e digite file.exists("~/.ssh/id_rsa.pub"). Em meu caso, esse foi o resultado:
+> file.exists("~/.ssh/id_rsa.pub")
+[1] FALSE
+Se o resultado foi FALSE ou TRUE, vai determinar o que você vai fazer em seguida. Abra a 
+tela de propriedades: Tools -> Global Options… Uma tela de opções irá abrir e no lado 
+esquerdo escolha Git/SVN.
+Se na tela anterior apareceu FALSE, você terá de criar uma. Basta clicar no botão Create 
+RSA Key.... Clique em gerar chave. Em seguida, vai aparecer a chave e um desenho interessante. 
+Você pode salvar isso no seu computador. Quando você fechar, você precisa recuperar a chave.
+
+Agora, se apareceu TRUE ou você seguiu as instruções do parágrafo acima, basta clicar em 
+View public key. Copie usando CMD + C (ou CTRL + C em PCs). Em seguida, você tem de 
+colocar a chave no Github, para fazer a ligação dos sistemas. Para tanto, abra o seguinte link 
+https://github.com/settings/ssh.
+
+No título, coloquei R Studio e, na key, você cola (CMD + V ou CTRL + V) o conteúdo da 
+chave. A chave deve começar com ssh-rsa e caracteres aparentemente aleatórios, que são a chave 
+gerada. Ao terminar, clique em Add SSH key.
+Agora, você precisa criar um repositório no Github. No Github, clique em +, no lado 
+superior direito, próximo à sua foto. Vai abrir um menu, e você deve escolher New repository.
